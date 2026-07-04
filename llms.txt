@@ -1,0 +1,19 @@
+# IA for Gulf — AI Consulting for the UAE & GCC
+
+> French and European AI excellence, delivered across the Gulf. AI diagnostics, training and architecture for UAE and Middle East enterprises, with European-grade governance and full data sovereignty. By Jérôme Denis (JDENIS Consulting). Signature: "Keeping AI Human".
+
+## What IA for Gulf does
+Senior, independent AI consulting for Gulf enterprises, in three disciplines: (1) AI diagnostics & audit — maturity assessment, ROI-prioritised use cases, costed roadmap; (2) executive & team AI training (1–5 days, EN/FR); (3) custom AI architecture — agents, document RAG, MCP, fine-tuning — with sovereign hosting and no vendor lock-in. Every use case is mapped to local frameworks (UAE PDPL, DIFC, ADGM) and EU AI Act / GDPR-level governance.
+
+## Key facts
+- Consultant: Jérôme Denis — 20+ years in digital transformation, 50+ companies, expert with France's Collège Numérique France 2030, Sciconum certified. Delivered in English or French.
+- Coverage: Dubai and across the GCC, on-site and remote.
+- Differentiators: European governance standards, data sovereignty and residency, senior & independent (no junior teams, no vendor lock-in).
+- Signature method: HIERODEIIS — a three-day sector immersion for cohorts of leaders.
+- Local representative: Stéphane de Boysson, based in Dubai (+971 58 599 8642).
+
+## Links
+- Website: https://iaforgulf.com/
+- Jérôme Denis: https://jaydenis.com/
+- HIERODEIIS method: https://jaydenis.com/methode-hierodeiis
+- Build practice (AI agents): https://noianogain.com/

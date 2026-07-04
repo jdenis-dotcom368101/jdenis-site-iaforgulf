@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js');</script>
+<title>IA for Gulf — AI Consulting for the UAE &amp; GCC | Jérôme Denis</title>
+<meta name="description" content="AI diagnostics, training and architecture for UAE &amp; GCC enterprises — European-grade governance and full data sovereignty. By Jérôme Denis.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="google-site-verification" content="sGuibuE5P-jYHQlOvSpb6dNON_BNNgyjKvvYQxx3lOE">
+<meta name="author" content="Jérôme Denis">
+<link rel="canonical" href="https://iaforgulf.com/">
+<meta name="theme-color" content="#0E1320">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iaforgulf.com/">
+<meta property="og:site_name" content="IA for Gulf">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="IA for Gulf — AI Consulting for the UAE &amp; GCC">
+<meta property="og:description" content="French &amp; European AI excellence, delivered across the GCC. Governance, data sovereignty, hands-on delivery.">
+<meta property="og:image" content="https://iaforgulf.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="IA for Gulf — AI Consulting for the UAE & GCC by Jérôme Denis">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IA for Gulf — AI Consulting for the UAE &amp; GCC">
+<meta name="twitter:description" content="French &amp; European AI excellence, delivered across the GCC.">
+<meta name="twitter:image" content="https://iaforgulf.com/og-image.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://iaforgulf.com/#organization","name":"IA for Gulf","alternateName":"JDENIS Consulting","url":"https://iaforgulf.com/","logo":{"@type":"ImageObject","url":"https://iaforgulf.com/img/logo-iaforgulf-dark.png"},"description":"AI diagnostics, training and architecture for UAE and GCC enterprises, with European-grade governance and data sovereignty.","founder":{"@id":"https://iaforgulf.com/#jerome"},"sameAs":["https://jaydenis.com/","https://aivalue.fr/","https://noianogain.com/"],"areaServed":["AE","SA","QA","KW","BH","OM"],"slogan":"Keeping AI Human"},
+{"@type":"Person","@id":"https://iaforgulf.com/#jerome","name":"Jérôme Denis","jobTitle":"Senior AI & Data Governance consultant","worksFor":{"@id":"https://iaforgulf.com/#organization"},"url":"https://jaydenis.com/","sameAs":["https://jaydenis.com/"],"image":"https://iaforgulf.com/img/jerome-denis.jpg","knowsAbout":["Artificial intelligence","AI governance","EU AI Act","Data sovereignty","Digital transformation"]},
+{"@type":"WebSite","@id":"https://iaforgulf.com/#website","url":"https://iaforgulf.com/","name":"IA for Gulf","inLanguage":"en","publisher":{"@id":"https://iaforgulf.com/#organization"}},
+{"@type":"WebPage","@id":"https://iaforgulf.com/#webpage","url":"https://iaforgulf.com/","name":"IA for Gulf — AI Consulting for the UAE & GCC","isPartOf":{"@id":"https://iaforgulf.com/#website"},"about":{"@id":"https://iaforgulf.com/#organization"},"primaryImageOfPage":"https://iaforgulf.com/og-image.jpg","inLanguage":"en"},
+{"@type":"Service","@id":"https://iaforgulf.com/#service","name":"AI consulting, training and architecture for the Gulf","serviceType":"Artificial intelligence consulting","provider":{"@id":"https://iaforgulf.com/#organization"},"areaServed":["AE","SA","QA","KW","BH","OM"],"description":"AI diagnostics and audit, executive and team AI training, and custom AI architecture (agents, RAG, MCP) with sovereign hosting and EU AI Act-grade governance."},
+{"@type":"FAQPage","@id":"https://iaforgulf.com/#faq","mainEntity":[
+{"@type":"Question","name":"Where is my data hosted, and is it sovereign?","acceptedAnswer":{"@type":"Answer","text":"Architecture is designed for in-region and sovereign hosting, with clear data residency and full reversibility, mapped to local frameworks (UAE PDPL, DIFC, ADGM) and EU AI Act / GDPR-level discipline."}},
+{"@type":"Question","name":"Do you operate on the ground in the UAE?","acceptedAnswer":{"@type":"Answer","text":"Yes. Engagements are delivered on-site in Dubai and across the GCC, and remotely, in English or French."}},
+{"@type":"Question","name":"Why a European consultant rather than a global firm?","acceptedAnswer":{"@type":"Answer","text":"You get a senior, independent practitioner directly — not a rotating junior team — plus European governance standards, no licences to resell and no vendor lock-in."}},
+{"@type":"Question","name":"Can you build the solution, not just advise?","acceptedAnswer":{"@type":"Answer","text":"Yes. I design the architecture and can deliver the build, notably through NOIA NOGAIN, with sovereign hosting and reversibility built in."}}]},
+{"@type":"BreadcrumbList","@id":"https://iaforgulf.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://iaforgulf.com/"}]}
+]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FFFFFF;
+    --paper-2:#F5F6F8;
+    --paper-3:#ECEEF3;
+    --ink:#14161C;
+    --ink-soft:#5A616E;
+    --clay:#1E47F0;          /* cobalt — European tech & governance trust */
+    --clay-deep:#1535C7;
+    --teal:#1F6F66;
+    --teal-deep:#155049;
+    --spark:#AD8836;         /* prestige gold — Gulf resonance (remplace le framboise FR) */
+    --noir:#F5F6F8;
+    --line:rgba(20,22,28,.12);
+    --line-d:rgba(20,22,28,.12);
+    --serif:'Newsreader',Georgia,serif;
+    --sans:'Inter',system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;font-size:17px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  body.preload *{transition:none!important}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 34px}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-0.01em}
+  .label{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+  .clay{color:var(--clay)}.tealc{color:var(--teal)}.spark{color:var(--spark)}
+  .it{font-style:italic;font-weight:500}
+
+  .grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.04;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='110'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.86' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .preview-badge{position:fixed;bottom:16px;left:16px;z-index:60;background:var(--ink);color:var(--paper);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:7px 13px;border-radius:7px}
+  .preview-badge b{color:var(--spark)}
+
+  header{position:fixed;inset:0 0 auto 0;z-index:50;padding:20px 0;transition:padding .4s,background .4s,box-shadow .4s,backdrop-filter .4s}
+  header.scrolled{padding:12px 0;background:rgba(255,255,255,.86);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px}
+  .logo{display:flex;align-items:center;gap:13px;font-family:var(--serif);font-weight:700;font-size:21px;letter-spacing:.01em}
+  .logo img{height:50px;width:auto;display:block}
+  header.scrolled .logo img{height:42px;transition:height .4s}
+  nav.main{display:flex;gap:24px;align-items:center}
+  nav.main a:not(.btn){font-size:14px;font-weight:500;position:relative}
+  nav.main a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1.5px;background:var(--clay);transition:width .35s cubic-bezier(.2,.7,.2,1)}
+  nav.main a:not(.btn):hover::after{width:100%}
+  nav.main a:not(.btn):hover{color:var(--clay)}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--paper);padding:11px 20px;border-radius:8px;font-weight:600;font-size:14px;position:relative;overflow:hidden;will-change:transform}
+  .btn span{position:relative;z-index:2}
+  .btn::before{content:"";position:absolute;inset:0;background:var(--clay);transform:translateY(101%);transition:transform .42s cubic-bezier(.2,.7,.2,1)}
+  .btn:hover::before{transform:translateY(0)}.btn:hover{color:#fff}
+  @media(max-width:920px){nav.main a:not(.btn){display:none}}
+
+  .hero{position:relative;z-index:2;padding:140px 0 70px}
+  .hero .wrap{display:grid;grid-template-columns:1.5fr .78fr;gap:50px;align-items:center}
+  .hero .eyebrow{display:flex;align-items:center;gap:11px;color:var(--clay);margin-bottom:24px}
+  .hero .eyebrow::before{content:"";width:38px;height:1px;background:var(--clay)}
+  .hero h1{font-size:clamp(40px,6vw,82px);font-weight:600}
+  .hero h1 .l{display:block;overflow:hidden}
+  .hero h1 .l>span{display:inline-block;will-change:transform}
+  .tw-wrap{display:inline-block}.tw{color:var(--clay)}
+  .caret{display:inline-block;width:2px;height:.82em;background:var(--clay);margin-left:3px;vertical-align:-6%;animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .hero-lede{margin-top:26px;max-width:560px;font-size:19px;color:var(--ink-soft)}
+  .hero-cta{margin-top:30px;display:flex;gap:13px;align-items:center;flex-wrap:wrap}
+  .btn-ghost{border:1.5px solid var(--line);padding:11px 20px;border-radius:8px;font-weight:600;font-size:14px;transition:border-color .3s}
+  .btn-ghost:hover{border-color:var(--clay);color:var(--clay)}
+  .hero-card{position:relative;background:var(--paper-2);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .hero-card img{width:92px;height:92px;border-radius:50%;object-fit:cover;border:2px solid var(--spark)}
+  .hero-card .nm{font-family:var(--serif);font-weight:600;font-size:20px;margin-top:14px}
+  .hero-card .rl{font-size:13.5px;color:var(--ink-soft);margin-top:3px}
+  .hero-card .mini{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+  .hero-card .mini span{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--teal-deep);border:1px solid var(--line);border-radius:999px;padding:5px 11px}
+  @media(max-width:880px){.hero .wrap{grid-template-columns:1fr}.hero-card{max-width:340px}}
+
+  .marquee{position:relative;z-index:2;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;overflow:hidden;background:var(--paper-2)}
+  .marquee .track{display:flex;gap:46px;width:max-content;align-items:center;animation:scroll 36s linear infinite}
+  .marquee:hover .track{animation-play-state:paused}
+  .marquee .mi{font-family:var(--serif);font-size:19px;color:var(--ink-soft);white-space:nowrap;display:flex;align-items:center;gap:46px}
+  .marquee .mi::after{content:"●";color:var(--spark);font-size:8px}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  .refs{padding:92px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}
+  .refs .rhead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:42px}
+  .refs .rhead h2{font-size:clamp(26px,3.6vw,44px)}
+  .refs .rhead .cnt{text-align:right}
+  .refs .rhead .cnt b{font-family:var(--serif);font-weight:600;font-size:clamp(44px,5.6vw,78px);line-height:.85;color:var(--spark);display:block}
+  .refs .rhead .cnt small{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);display:block;margin-top:8px}
+  .refrow{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+  .refrow+.refrow{margin-top:16px}
+  .reftrack{display:flex;gap:16px;width:max-content;align-items:stretch;animation:scroll 42s linear infinite}
+  .reftrack.rev{animation-direction:reverse;animation-duration:50s}
+  .refitem{flex-shrink:0;display:flex;align-items:center;justify-content:center;gap:9px;height:78px;min-width:176px;padding:0 30px;border:1px solid var(--line);border-radius:13px;background:var(--paper);transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .45s,background .45s,box-shadow .45s}
+  .refitem:hover{transform:translateY(-5px);border-color:var(--spark);background:var(--paper);box-shadow:0 14px 30px rgba(20,22,28,.08)}
+  .refitem img{max-height:30px;width:auto;filter:grayscale(1) opacity(.6);transition:filter .45s}
+  .refitem:hover img{filter:grayscale(0) opacity(1)}
+  .refitem .wm{font-family:var(--serif);font-weight:600;font-size:19px;color:var(--ink-soft);white-space:nowrap;letter-spacing:-.01em;transition:color .45s}
+  .refitem:hover .wm{color:var(--ink)}
+  .refitem .wm i{font-style:normal;color:var(--clay);transition:color .45s}
+  .refitem:hover .wm i{color:var(--spark)}
+
+  section{position:relative;z-index:2}
+  .pad{padding:104px 0}
+  .dark{background:var(--noir);color:var(--ink)}
+  .alt{background:var(--paper-2)}
+  .sec-head{max-width:780px;margin-bottom:54px}
+  .sec-kicker{color:var(--clay);margin-bottom:16px}
+  .dark .sec-kicker{color:var(--clay)}
+  .sec-title{font-size:clamp(30px,4.4vw,52px)}
+  .sec-sub{font-size:18px;color:var(--ink-soft);margin-top:16px}
+  .dark .sec-sub{color:var(--ink-soft)}
+
+  .intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .intro p{font-size:18px;margin-bottom:18px;color:var(--ink)}
+  .intro p.soft{color:var(--ink-soft);font-size:16px}
+  .intro-fig{border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+  .intro-fig img{width:100%;height:360px;object-fit:cover;filter:saturate(.85) contrast(1.02)}
+  @media(max-width:820px){.intro{grid-template-columns:1fr;gap:28px}}
+
+  /* differentiator / governance */
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .pillar{border:1px solid var(--line);border-radius:16px;padding:30px 26px;background:var(--paper);transition:border-color .4s,transform .5s cubic-bezier(.2,.7,.2,1)}
+  .pillar:hover{border-color:var(--spark);transform:translateY(-5px)}
+  .pillar .ic{font-size:24px;margin-bottom:14px}
+  .pillar h3{font-size:21px;margin-bottom:10px}
+  .pillar p{font-size:15px;color:var(--ink-soft)}
+  @media(max-width:880px){.pillars{grid-template-columns:1fr}}
+
+  .svc{display:grid;grid-template-columns:1fr;gap:18px}
+  .svc-row{display:grid;grid-template-columns:300px 1fr;gap:34px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:border-color .4s,transform .5s cubic-bezier(.2,.7,.2,1)}
+  .svc-row:hover{border-color:var(--clay);transform:translateY(-4px)}
+  .svc-row .ph{height:100%;min-height:230px;overflow:hidden}
+  .svc-row .ph img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+  .svc-row:hover .ph img{transform:scale(1.05)}
+  .svc-row .bd{padding:30px 34px 30px 0}
+  .svc-row .n{font-size:13px;font-weight:700;color:var(--clay);letter-spacing:.04em}
+  .svc-row h3{font-size:27px;margin:8px 0 12px}
+  .svc-row p{color:var(--ink-soft);font-size:15.5px;margin-bottom:14px}
+  .svc-row ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+  .svc-row li{font-size:13px;color:var(--ink);background:var(--paper-2);border:1px solid var(--line);border-radius:7px;padding:6px 11px}
+  @media(max-width:760px){.svc-row{grid-template-columns:1fr}.svc-row .bd{padding:0 24px 26px}.svc-row .ph{min-height:200px}}
+
+  .sectors{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .sector{border:1px solid var(--line);border-radius:14px;padding:24px 22px;background:var(--paper);transition:background .4s,border-color .4s,transform .4s}
+  .sector:hover{background:var(--paper-2);border-color:var(--clay);transform:translateY(-4px)}
+  .sector .ic{font-size:24px;margin-bottom:12px}
+  .sector h3{font-size:18px;font-weight:600}
+  .sector p{font-size:13.5px;color:var(--ink-soft);margin-top:6px}
+  @media(max-width:880px){.sectors{grid-template-columns:repeat(2,1fr)}}
+
+  .steps{border-top:1px solid var(--line-d)}
+  .dark .step{border-bottom:1px solid var(--line-d)}
+  .step{display:grid;grid-template-columns:90px 1fr auto;gap:32px;align-items:start;padding:34px 0;transition:padding-left .4s cubic-bezier(.2,.7,.2,1)}
+  .step:hover{padding-left:14px}
+  .step .idx{font-family:var(--serif);font-size:26px;color:var(--clay)}
+  .step h3{font-size:25px;margin-bottom:8px}
+  .step p{color:var(--ink-soft);max-width:620px;font-size:15.5px}
+  .step .tg{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);white-space:nowrap;padding-top:9px}
+  @media(max-width:760px){.step{grid-template-columns:54px 1fr;gap:16px}.step .tg{display:none}}
+
+  .stack{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:14px}
+  .chipimg{display:flex;flex-direction:column;align-items:center;gap:9px;border:1px solid var(--line);border-radius:12px;padding:18px 8px;background:var(--paper)}
+  .chipimg img{width:30px;height:30px;object-fit:contain}
+  .chipimg span{font-size:11.5px;font-weight:600;text-align:center;color:var(--ink)}
+  .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+  .chips .c{border:1.5px solid var(--teal);color:var(--teal-deep);border-radius:999px;padding:7px 15px;font-size:12.5px;font-weight:600}
+  @media(max-width:880px){.stack{grid-template-columns:repeat(3,1fr)}}
+
+  .bio{display:grid;grid-template-columns:.62fr 1.38fr;gap:46px;align-items:start}
+  .bio-photo img{width:100%;max-width:280px;border-radius:14px;aspect-ratio:4/5;object-fit:cover}
+  .bio-photo .cap{margin-top:12px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)}
+  .bio p{font-size:17px;margin-bottom:16px}
+  .bio p.soft{color:var(--ink-soft);font-size:15.5px}
+  .bio .creds{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+  .bio .cred{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:12px;font-weight:600}
+  .bio .cred b{color:var(--clay)}
+  @media(max-width:760px){.bio{grid-template-columns:1fr;gap:26px}.bio-photo img{max-width:200px}}
+
+  .conf-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:38px}
+  .conf-photos figure{position:relative;overflow:hidden;border-radius:14px}
+  .conf-photos img{width:100%;height:300px;object-fit:cover}
+  .conf-photos figcaption{position:absolute;left:14px;bottom:12px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;background:rgba(23,19,16,.62);color:#fff;backdrop-filter:blur(5px);padding:6px 10px;border-radius:7px}
+  .conf-list{border-top:1px solid var(--line)}
+  .conf{display:grid;grid-template-columns:80px 1fr auto;gap:26px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);transition:padding-left .4s cubic-bezier(.2,.7,.2,1)}
+  .conf:hover{padding-left:12px}
+  .conf .yr{font-size:13px;font-weight:700;color:var(--clay)}
+  .conf h3{font-size:clamp(18px,2.1vw,24px);font-weight:500}
+  .conf .venue{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);white-space:nowrap}
+  @media(max-width:760px){.conf-photos{grid-template-columns:1fr}.conf-photos img{height:220px}.conf{grid-template-columns:54px 1fr;gap:14px}.conf .venue{display:none}}
+
+  .partners{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .partner{display:flex;gap:18px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--paper);transition:border-color .4s}
+  .partner:hover{border-color:var(--clay)}
+  .partner .pl{font-family:var(--serif);font-weight:700;font-size:22px;flex-shrink:0}
+  .partner .pl b{color:var(--clay)}
+  .partner h3{font-size:18px;font-weight:600}
+  .partner p{font-size:14px;color:var(--ink-soft);margin-top:4px}
+  @media(max-width:760px){.partners{grid-template-columns:1fr}}
+
+  .feature{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .feature .glow{position:absolute;right:-12%;top:-20%;width:52vw;height:52vw;border-radius:50%;filter:blur(90px);background:radial-gradient(circle,rgba(173,136,54,.16),transparent 62%);z-index:1}
+  .feature .wrap{position:relative;z-index:2}
+  .feature h2{font-size:clamp(32px,4.8vw,64px);max-width:900px;margin-bottom:22px}
+  .feature p{color:var(--ink-soft);max-width:600px;font-size:17px;margin-bottom:28px}
+  .feature .btn{background:var(--clay);color:#fff}.feature .btn::before{background:var(--ink)}
+
+  .faq details{border-bottom:1px solid var(--line);padding:4px 0}
+  .faq summary{cursor:pointer;list-style:none;font-family:var(--serif);font-weight:600;font-size:19px;padding:18px 40px 18px 0;position:relative}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";position:absolute;right:6px;top:16px;color:var(--clay);font-size:22px}
+  .faq details[open] summary::after{content:"–"}
+  .faq details p{padding:0 0 18px;color:var(--ink-soft);font-size:15.5px;max-width:760px}
+
+  .cta{text-align:center}
+  .cta h2{font-size:clamp(38px,6.4vw,92px)}
+  .cta .btn{margin-top:32px;font-size:15px;padding:16px 32px}
+
+  /* contact — représentant local mis en avant */
+  .contact-grid{display:grid;grid-template-columns:1fr .92fr;gap:50px;align-items:center}
+  .contact-lead h2{font-size:clamp(32px,4.6vw,56px);margin-bottom:18px}
+  .contact-lead p{font-size:18px;color:var(--ink-soft);max-width:440px}
+  .rep-card{border:1px solid var(--line);border-radius:18px;padding:30px;background:var(--paper);box-shadow:0 18px 44px rgba(20,22,28,.07)}
+  .rep-card .top{display:flex;gap:18px;align-items:center}
+  .rep-ph{flex-shrink:0}
+  .rep-photo,.rep-ph-fallback{width:88px;height:88px;border-radius:14px;border:2px solid var(--spark)}
+  .rep-photo{object-fit:cover}
+  .rep-ph-fallback{display:flex;align-items:center;justify-content:center;background:var(--ink);color:var(--spark);font-family:var(--serif);font-weight:700;font-size:30px}
+  .rep-card .who .badge{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--spark);margin-bottom:6px}
+  .rep-card .who .nm{font-family:var(--serif);font-weight:600;font-size:24px}
+  .rep-card .who .rl{font-size:13.5px;color:var(--ink-soft);margin-top:3px}
+  .rep-card .lines{margin-top:22px;border-top:1px solid var(--line);padding-top:20px;display:flex;flex-direction:column;gap:12px}
+  .rep-card .lines a{display:flex;align-items:center;gap:12px;font-size:16px;font-weight:600;color:var(--ink)}
+  .rep-card .lines a:hover{color:var(--clay)}
+  .rep-card .lines a .ic{width:38px;height:38px;border-radius:10px;background:var(--paper-2);display:flex;align-items:center;justify-content:center;font-size:16px}
+  .rep-card .cta-row{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+  @media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:32px}}
+
+  footer{background:#0E1320;color:rgba(255,255,255,.62);padding:66px 0 46px;font-size:14px;position:relative;z-index:2}
+  .foot-brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;margin-bottom:42px}
+  .foot-brand img{height:104px;width:auto}
+  .foot-brand .slogan{font-family:var(--serif);font-weight:600;font-size:27px;color:#fff;letter-spacing:.01em}
+  .foot-brand .slogan i{color:var(--spark);font-style:normal}
+  footer .foot-info{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.13);padding-top:26px}
+  footer a{color:var(--spark)}
+  footer a:hover{color:#fff}
+
+  /* sections sombres "marque" (about + contact) */
+  .ink{background:#0E1320;color:#fff;position:relative;overflow:hidden}
+  .ink .wrap{position:relative;z-index:2}
+  .ink .sec-kicker{color:var(--spark)}
+  .ink .sec-title,.ink h2,.ink h3,.ink .nm,.ink strong{color:#fff}
+  .ink .sec-sub,.ink p,.ink p.soft{color:rgba(255,255,255,.72)}
+  .ink .cred{border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.88)}
+  .ink .cred b{color:var(--spark)}
+  .ink .glow2{position:absolute;left:-14%;top:-28%;width:50vw;height:50vw;border-radius:50%;filter:blur(95px);background:radial-gradient(circle,rgba(173,136,54,.16),transparent 62%);z-index:1;pointer-events:none}
+  .brand-mark{display:flex;align-items:center;gap:18px;margin-bottom:36px}
+  .brand-mark img{height:86px;width:auto}
+  .brand-mark .t{font-family:var(--serif);font-weight:600;font-size:27px;color:#fff;line-height:1.05}
+  .brand-mark .t i{color:var(--spark);font-style:normal}
+  .brand-mark .t small{display:block;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:6px}
+  @media(max-width:600px){.brand-mark img{height:64px}.brand-mark .t{font-size:22px}}
+
+  /* portrait bio — bords dégradés */
+  .bio-photo.fade img{max-width:340px;border:none;border-radius:8px;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;
+    -webkit-mask-image:radial-gradient(76% 84% at 50% 33%,#000 54%,transparent 100%);
+    mask-image:radial-gradient(76% 84% at 50% 33%,#000 54%,transparent 100%)}
+  .ink .bio-photo .cap{color:rgba(255,255,255,.55)}
+  .ink .rep-card{color:var(--ink)}
+  .ink .rep-card .btn-ghost{color:var(--ink)}
+
+  /* bannière cookies (RGPD/GDPR) */
+  .cookie{position:fixed;left:22px;right:22px;bottom:22px;z-index:70;max-width:760px;margin:0 auto;background:#0E1320;border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 22px;box-shadow:0 16px 44px rgba(0,0,0,.42);display:none;gap:16px;align-items:center;flex-wrap:wrap;color:rgba(255,255,255,.72)}
+  .cookie.show{display:flex}
+  .cookie p{flex:1;min-width:240px;font-size:13px;line-height:1.55}
+  .cookie p a{color:var(--spark)}
+  .cookie .ck-acts{display:flex;gap:10px;flex-wrap:wrap}
+  .cookie button{font-family:inherit;font-weight:600;font-size:13px;padding:10px 20px;border-radius:8px;cursor:pointer;border:1px solid rgba(255,255,255,.22);background:transparent;color:#fff;transition:background .3s,border-color .3s,color .3s}
+  .cookie button.acc{background:var(--clay);border-color:var(--clay)}
+  .cookie button.acc:hover{background:var(--spark);border-color:var(--spark)}
+  .cookie button.ref:hover{border-color:var(--spark);color:var(--spark)}
+  @media(max-width:600px){.cookie{left:12px;right:12px;bottom:12px}.cookie .ck-acts{width:100%}.cookie button{flex:1}}
+
+  .reveal{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+  html.js .reveal:not(.in){opacity:0;transform:translateY(30px)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important}.marquee .track,.reftrack{animation:none}.caret{animation:none}.hero h1 .l>span{transform:none!important}}
+</style>
+</head>
+<body class="preload">
+<div class="grain"></div>
+
+<header id="header">
+  <div class="wrap">
+    <a class="logo" href="#"><img src="img/logo-iaforgulf-light.png" alt="IA for Gulf"><span>IA for Gulf</span></a>
+    <nav class="main">
+      <a href="#why">Why Europe</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#sectors">Sectors</a>
+      <a href="#about">About</a>
+      <a href="#hierodeiis">HIERODEIIS</a>
+      <a class="btn" href="#contact"><span>Book a discovery call</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow label">AI Consultant · Dubai · Middle East · Europe</div>
+        <h1>
+          <span class="l"><span>I help Gulf leaders</span></span>
+          <span class="l"><span><span class="tw-wrap"><span class="tw">diagnose.</span><span class="caret"></span></span></span></span>
+        </h1>
+        <p class="hero-lede reveal d1">French and European AI excellence, delivered across the GCC. Diagnostics, training and AI architecture for UAE and Middle East enterprises — with European-grade governance and full data sovereignty. <em>Keeping AI Human.</em></p>
+        <div class="hero-cta reveal d2">
+          <a class="btn magnetic" href="#contact"><span>Book a discovery call</span></a>
+          <a class="btn-ghost" href="#why">Why a European consultant</a>
+        </div>
+      </div>
+      <aside class="hero-card reveal d2">
+        <img src="img/jerome-denis.jpg" alt="Jérôme Denis, AI consultant" style="object-position:50% 14%">
+        <div class="nm">Jérôme Denis</div>
+        <div class="rl">Senior AI &amp; Data Governance consultant</div>
+        <div class="mini"><span>20+ years</span><span>50+ companies</span><span>EU AI Act</span><span>EN · FR</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="track" id="track">
+      <span class="mi">European-grade AI governance</span><span class="mi">EU AI Act &amp; data sovereignty</span>
+      <span class="mi">20+ years of digital transformation</span><span class="mi">Senior &amp; independent — not a tower-block firm</span>
+      <span class="mi">Delivered on-site &amp; remotely across the GCC</span><span class="mi">Keeping AI Human</span>
+    </div>
+  </div>
+
+  <!-- CONSTAT / WHY NOW -->
+  <section class="pad" id="market">
+    <div class="wrap">
+      <div class="intro">
+        <div class="reveal">
+          <div class="sec-kicker label">The moment</div>
+          <h2 class="sec-title">The Gulf is moving fast on AI. The winners will move <span class="spark it">deliberately</span>.</h2>
+          <p style="margin-top:20px">Under the <strong>UAE National AI Strategy 2031</strong>, artificial intelligence has become a boardroom priority across banking, real estate, logistics, government and energy. Budgets are flowing — but the gap between proof-of-concept and production value is where most initiatives stall.</p>
+          <p class="soft">My role: start from your processes and your data, prioritise the use cases with real ROI, and build them on solid foundations — governance, security and people — so AI becomes a production asset, not an experiment.</p>
+        </div>
+        <div class="intro-fig reveal d1"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=720&fit=crop" alt="Data dashboard and AI use-case prioritisation" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section class="refs" id="references">
+    <div class="wrap">
+      <div class="rhead reveal">
+        <div>
+          <div class="sec-kicker label">Track record</div>
+          <h2>European organisations already <span class="spark it">trust</span> the method.</h2>
+        </div>
+        <div class="cnt"><b>50+</b><small>companies &amp; 7 schools</small></div>
+      </div>
+    </div>
+    <div class="refrow">
+      <div class="reftrack" data-dup>
+        <div class="refitem"><img src="logo-spelem.png" alt="SPELEM"></div>
+        <div class="refitem"><img src="logo-france-travail.png" alt="France Travail"></div>
+        <div class="refitem"><img src="logo-mimbus.png" alt="MIMBUS"></div>
+        <div class="refitem"><span class="wm">ON-X<i>.</i></span></div>
+        <div class="refitem"><img src="logos/laclim.png" alt="LACLIM"></div>
+        <div class="refitem"><img src="logos/vrshow.png" alt="VR-SHOW"></div>
+        <div class="refitem"><img src="logo-artshopping.png" alt="Art Shopping Paris"></div>
+        <div class="refitem"><img src="logo-ascom.png" alt="AS'COM"></div>
+      </div>
+    </div>
+    <div class="refrow">
+      <div class="reftrack rev" data-dup>
+        <div class="refitem"><img src="logos/tbs.webp" alt="TBS Education"></div>
+        <div class="refitem"><span class="wm">YNOV<i>.</i></span></div>
+        <div class="refitem"><img src="logos/lisaa.svg" alt="LISAA"></div>
+        <div class="refitem"><img src="logos/purpan.svg" alt="Purpan"></div>
+        <div class="refitem"><img src="logos/mediaschool.png" alt="MediaSchool"></div>
+        <div class="refitem"><img src="logos/digitalcampus.svg" alt="Digital Campus"></div>
+        <div class="refitem"><span class="wm">Collège Numérique France 2030<i>.</i></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY A EUROPEAN CONSULTANT (differentiator) -->
+  <section class="alt pad" id="why">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-kicker label">Why Europe, in the region</div>
+        <h2 class="sec-title">European excellence, <span class="spark it">Gulf-ready</span>.</h2>
+        <p class="sec-sub">Global firms bring scale and slide decks. I bring senior, independent, hands-on expertise — and the European standards your stakeholders and regulators increasingly expect.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar reveal"><div class="ic">⚖️</div><h3>Governance by design</h3><p>EU AI Act-grade governance and GDPR-level data discipline, mapped to local frameworks (UAE PDPL, DIFC, ADGM). Responsible AI that passes board and regulator scrutiny.</p></div>
+        <div class="pillar reveal d1"><div class="ic">🔐</div><h3>Data sovereignty</h3><p>Architecture designed for sovereign and in-region hosting, clear data residency, and full reversibility. Your data stays where it must, under contracts you control.</p></div>
+        <div class="pillar reveal d2"><div class="ic">🎯</div><h3>Senior &amp; independent</h3><p>You work directly with a 20-year practitioner, not a rotating junior team. No licences to resell, no vendor lock-in — recommendations arbitrated on your ROI alone.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE / SERVICES -->
+  <section class="pad" id="expertise">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-kicker label">Expertise</div>
+        <h2 class="sec-title">From audit to deployment.</h2>
+        <p class="sec-sub">Three complementary disciplines, from strategic framing to a solution in production.</p>
+      </div>
+      <div class="svc">
+        <article class="svc-row reveal">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=500&fit=crop" alt="AI diagnostics and audit" loading="lazy"></div>
+          <div class="bd">
+            <div class="n">01 — Advisory</div>
+            <h3>AI diagnostics &amp; audit</h3>
+            <p>A maturity assessment of your organisation and an independent audit of existing or proposed AI solutions. Process mapping, ROI-prioritised use cases, a costed roadmap. Free initial assessment.</p>
+            <ul><li>AI maturity</li><li>ROI use cases</li><li>Solution audit</li><li>EU AI Act &amp; PDPL</li><li>Data governance</li></ul>
+          </div>
+        </article>
+        <article class="svc-row reveal">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=700&h=500&fit=crop" alt="Corporate AI training" loading="lazy"></div>
+          <div class="bd">
+            <div class="n">02 — Training</div>
+            <h3>Executive &amp; team AI training</h3>
+            <p>In-company programmes from 1 to 5 days, by role and by business line. Your teams genuinely master ChatGPT, Claude and Gemini on real cases, within a controlled confidentiality framework. Delivered in English or French.</p>
+            <ul><li>Executives &amp; boards</li><li>Advanced prompting</li><li>Agents &amp; automation</li><li>Usage policy</li><li>EN · FR</li></ul>
+          </div>
+        </article>
+        <article class="svc-row reveal">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=700&h=500&fit=crop" alt="Custom AI architecture — agents, RAG, MCP" loading="lazy"></div>
+          <div class="bd">
+            <div class="n">03 — Engineering</div>
+            <h3>AI architecture &amp; solutions</h3>
+            <p>The right solution for your processes: autonomous agents, document RAG, MCP connections, fine-tuning, low-code. From prototype to deployment, running costs quantified, sovereign hosting, no vendor lock-in.</p>
+            <ul><li>AI agents</li><li>RAG · MCP</li><li>Fine-tuning</li><li>Sovereign hosting</li><li>Reversibility</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORS -->
+  <section class="alt pad" id="sectors">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-kicker label">Sectors</div>
+        <h2 class="sec-title">Calibrated for the region's priorities.</h2>
+        <p class="sec-sub">Use cases shaped for your industry's real constraints, not generic examples.</p>
+      </div>
+      <div class="sectors">
+        <div class="sector reveal"><div class="ic">🏦</div><h3>Banking &amp; Finance</h3><p>Onboarding, compliance, document intelligence, risk.</p></div>
+        <div class="sector reveal d1"><div class="ic">🏙️</div><h3>Real Estate</h3><p>Lead qualification, contracts, listings, customer care.</p></div>
+        <div class="sector reveal d2"><div class="ic">📦</div><h3>Logistics &amp; Trade</h3><p>Planning, exceptions, customs documentation.</p></div>
+        <div class="sector reveal d3"><div class="ic">🏛️</div><h3>Government</h3><p>Citizen services, knowledge bases, multilingual support.</p></div>
+        <div class="sector reveal"><div class="ic">⚡</div><h3>Energy</h3><p>Maintenance, technical documentation, reporting.</p></div>
+        <div class="sector reveal d1"><div class="ic">🛍️</div><h3>Retail</h3><p>Product content, support, demand and pricing.</p></div>
+        <div class="sector reveal d2"><div class="ic">🏨</div><h3>Hospitality</h3><p>Guest experience, concierge, reviews, operations.</p></div>
+        <div class="sector reveal d3"><div class="ic">🩺</div><h3>Healthcare</h3><p>Admin automation, records, compliant assistants.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="dark pad" id="method">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-kicker label">The method</div>
+        <h2 class="sec-title">Three steps, from framing to value.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="idx">01</div><div><h3>Diagnose</h3><p>Start from processes and data, never the tool. Use cases prioritised by value and feasibility; blind spots made explicit on the IT side (security, integration) and the people side (skills, adoption).</p></div><div class="tg">Understand</div></div>
+        <div class="step reveal"><div class="idx">02</div><div><h3>Train</h3><p>Clear-eyed leaders and equipped teams, able to tell what AI truly delivers from what marketing promises. Hands-on practice on your real cases, in a secure framework.</p></div><div class="tg">Enable</div></div>
+        <div class="step reveal"><div class="idx">03</div><div><h3>Transform</h3><p>A roadmap, then the bespoke solution if it is justified: a prototype tested on real data, deployment, handover. You stay the owner and remain autonomous.</p></div><div class="tg">Deploy</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="pad" id="stack">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-kicker label">Technology stack</div>
+        <h2 class="sec-title">Platforms mastered, not name-dropped.</h2>
+      </div>
+      <div class="stack reveal">
+        <div class="chipimg"><img src="logos-tech/openai.svg" alt="OpenAI" loading="lazy"><span>ChatGPT</span></div>
+        <div class="chipimg"><img src="logos-tech/claude.svg" alt="Claude" loading="lazy"><span>Claude</span></div>
+        <div class="chipimg"><img src="logos-tech/googlegemini.svg" alt="Gemini" loading="lazy"><span>Gemini</span></div>
+        <div class="chipimg"><img src="logos-tech/mistralai.svg" alt="Mistral" loading="lazy"><span>Mistral</span></div>
+        <div class="chipimg"><img src="logos-tech/perplexity.svg" alt="Perplexity" loading="lazy"><span>Perplexity</span></div>
+        <div class="chipimg"><img src="logos-tech/huggingface.svg" alt="Hugging Face" loading="lazy"><span>Hugging Face</span></div>
+        <div class="chipimg"><img src="logos-tech/modelcontextprotocol.svg" alt="MCP" loading="lazy"><span>MCP</span></div>
+        <div class="chipimg"><img src="logos-tech/openclaw.jpg" alt="OpenClaw" loading="lazy" style="border-radius:7px"><span>OpenClaw</span></div>
+        <div class="chipimg"><img src="logos-tech/make.svg" alt="Make" loading="lazy"><span>Make</span></div>
+        <div class="chipimg"><img src="logos-tech/airtable.svg" alt="Airtable" loading="lazy"><span>Airtable</span></div>
+        <div class="chipimg"><img src="logos-tech/notion.svg" alt="Notion" loading="lazy"><span>Notion</span></div>
+        <div class="chipimg"><img src="logos-tech/anthropic.svg" alt="Anthropic" loading="lazy"><span>Anthropic</span></div>
+      </div>
+      <div class="chips reveal d1">
+        <span class="c">AI agent design</span><span class="c">Document RAG</span><span class="c">LLM integration</span>
+        <span class="c">Fine-tuning</span><span class="c">MCP &amp; business tools</span><span class="c">Low-code</span><span class="c">Prompt engineering</span><span class="c">Governance &amp; AI Act</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="ink pad" id="about">
+    <div class="glow2"></div>
+    <div class="wrap">
+      <div class="brand-mark reveal">
+        <img src="img/logo-iaforgulf-dark.png" alt="IA for Gulf">
+        <div class="t">IA for <i>Gulf</i><small>The consultant behind the method</small></div>
+      </div>
+      <div class="sec-head reveal">
+        <div class="sec-kicker label">About</div>
+        <h2 class="sec-title">A <span class="spark it">versatile</span> profile, from the field to the boardroom.</h2>
+      </div>
+      <div class="bio">
+        <div class="bio-photo fade reveal">
+          <img src="img/jerome-denis.jpg" alt="Portrait of Jérôme Denis">
+          <div class="cap">Jérôme Denis · Europe &amp; the Middle East</div>
+        </div>
+        <div class="reveal d1">
+          <p>With more than <strong>twenty years of experience</strong> in digital transformation, I help SMEs, large groups and public bodies structure their AI usage, manage change and prioritise the use cases with real return on investment.</p>
+          <p class="soft">My background sets me apart through its versatility: entrepreneur, operations director, business developer, training-engineering specialist and director of digital innovation projects.</p>
+          <p class="soft">Degree in architecture, certified Scrum Master, certified Sciconum (Cognitive Sciences, AI &amp; Digital Tools — Galileo Global Education). Expert with France's Collège Numérique France 2030 programme. Delivered in English or French.</p>
+          <div class="creds">
+            <span class="cred"><b>20+</b> years</span>
+            <span class="cred"><b>50+</b> companies</span>
+            <span class="cred"><b>7</b> business schools</span>
+            <span class="cred"><b>Sciconum</b> certified</span>
+            <span class="cred"><b>France 2030</b> expert</span>
+            <span class="cred">EN · FR</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKING -->
+  <section class="pad" id="speaking">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-kicker label">On stage</div>
+        <h2 class="sec-title">Speaker on <span class="spark it">AI &amp; society</span>.</h2>
+        <p class="sec-sub">From science museums to public forums, I translate AI for decision-makers and the wider public.</p>
+      </div>
+      <div class="conf-photos reveal">
+        <figure><img src="img/conf-espace.jpg" alt="Jérôme Denis speaking at the Cité de l'espace" loading="lazy"><figcaption>Cité de l'espace · France</figcaption></figure>
+        <figure><img src="img/conf-secours.jpg" alt="Jérôme Denis leading an AI session" loading="lazy"><figcaption>Training &amp; public speaking</figcaption></figure>
+      </div>
+      <div class="conf-list reveal d1">
+        <div class="conf"><div class="yr">2025</div><h3>Can we still do without AI skills in 2025?</h3><div class="venue">Quai des Savoirs · La Mêlée</div></div>
+        <div class="conf"><div class="yr">2025</div><h3>Virtual Reality in service of the space sector</h3><div class="venue">Cité de l'espace</div></div>
+        <div class="conf"><div class="yr">2024</div><h3>Artificial Intelligence and the conquest of space</h3><div class="venue">Cité de l'espace</div></div>
+        <div class="conf"><div class="yr">2024</div><h3>AI &amp; society: mastering the tool to protect our freedoms</h3><div class="venue">Université Populaire ALDERAN</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="alt pad" id="partners">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-kicker label">Ecosystem</div>
+        <h2 class="sec-title">Co-founder of two practices.</h2>
+      </div>
+      <div class="partners">
+        <a class="partner reveal" href="https://noianogain.com" target="_blank" rel="noopener">
+          <div class="pl">NOIA<br><b>NOGAIN</b></div>
+          <div><h3>NOIA NOGAIN</h3><p>Custom autonomous AI agents that automate admin, sales and operations — the build arm when a project moves to production.</p></div>
+        </a>
+        <a class="partner reveal d1" href="https://aivalue.fr" target="_blank" rel="noopener">
+          <div class="pl">AI<b>VALUE</b></div>
+          <div><h3>AIVALUE</h3><p>AI-driven transformation of HR functions: recruitment, skills and employee experience.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIERODEIIS -->
+  <section class="dark feature pad" id="hierodeiis">
+    <div class="glow"></div>
+    <div class="wrap">
+      <div class="sec-kicker label reveal">Signature method</div>
+      <h2 class="reveal d1">HIERODEIIS — AI is learned <span class="spark it">among peers</span> from the same sector.</h2>
+      <p class="reveal d2">A three-day sector immersion for a small cohort of leaders. Training, diagnosis, transformation. The outcome: an actionable AI roadmap. Ideal for GCC industry groups, chambers and federations.</p>
+      <a class="btn magnetic reveal d2" href="https://jaydenis.com/methode-hierodeiis.html" target="_blank" rel="noopener"><span>Discover the method</span></a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="pad" id="faq">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="sec-kicker label">FAQ</div>
+        <h2 class="sec-title">What leaders in the region ask me.</h2>
+      </div>
+      <div class="faq reveal d1">
+        <details open><summary>Where is my data hosted, and is it sovereign?</summary><p>Architecture is designed for in-region and sovereign hosting, with clear data residency and full reversibility. I map every use case to local frameworks (UAE PDPL, DIFC, ADGM) and to EU AI Act / GDPR-level discipline, so it passes both board and regulator scrutiny.</p></details>
+        <details><summary>Do you operate on the ground in the UAE?</summary><p>Yes. Engagements are delivered on-site in Dubai and across the GCC, and remotely, in English or French. I work from Europe and travel for diagnostics, training and key milestones.</p></details>
+        <details><summary>Why a European consultant rather than a global firm?</summary><p>You get a senior, independent practitioner directly — not a rotating junior team — plus European governance standards your stakeholders increasingly expect. No licences to resell and no vendor lock-in: recommendations are arbitrated on your ROI alone.</p></details>
+        <details><summary>Can you build the solution, not just advise?</summary><p>Yes. I design the architecture and can deliver the build, notably through NOIA NOGAIN, the custom AI-agent practice I co-founded, with sovereign hosting and reversibility built in.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT — local representative -->
+  <section class="ink pad" id="contact">
+    <div class="glow2"></div>
+    <div class="wrap">
+      <div class="brand-mark reveal">
+        <img src="img/logo-iaforgulf-dark.png" alt="IA for Gulf">
+        <div class="t">IA for <i>Gulf</i><small>Bring it to your teams</small></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-lead reveal">
+          <div class="sec-kicker label">Let's talk</div>
+          <h2>Bring European AI excellence to your <span class="spark it">teams</span>.</h2>
+          <p>For projects in the UAE and the GCC, I am represented locally by <strong>Stéphane de Boysson</strong>, based in Dubai — your first point of contact on the ground.</p>
+        </div>
+        <aside class="rep-card reveal d1">
+          <div class="top">
+            <div class="rep-ph">
+              <img class="rep-photo" src="img/stephane.jpg" alt="Stéphane de Boysson, local representative" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="rep-ph-fallback" style="display:none">SdB</div>
+            </div>
+            <div class="who">
+              <div class="badge">Your local representative</div>
+              <div class="nm">Stéphane de Boysson</div>
+              <div class="rl">Based in Dubai · UAE &amp; GCC · contact on the ground</div>
+            </div>
+          </div>
+          <div class="lines">
+            <a href="tel:+971585998642"><span class="ic">📞</span>+971 58 599 8642</a>
+            <a href="mailto:s.deboysson@infoexpo.fr"><span class="ic">✉️</span>s.deboysson@infoexpo.fr</a>
+          </div>
+          <div class="cta-row">
+            <a class="btn magnetic" href="tel:+971585998642"><span>Call Stéphane</span></a>
+            <a class="btn-ghost" href="mailto:s.deboysson@infoexpo.fr">Send an email</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand">
+      <img src="img/logo-iaforgulf-dark.png" alt="IA for Gulf">
+      <div class="slogan">IA for <i>Gulf</i></div>
+    </div>
+    <div class="foot-info">
+      <div>© 2026 JDENIS Consulting — Jérôme Denis · Keeping AI Human · <a href="legal-notice.html">Legal notice &amp; GDPR</a></div>
+      <div><a href="mailto:jdenis@jaydenis.com">jdenis@jaydenis.com</a> · Dubai · Middle East · Europe</div>
+    </div>
+  </div>
+</footer>
+
+<!-- GDPR cookie consent -->
+<div class="cookie" id="cookieBanner" role="dialog" aria-label="Cookie settings">
+  <p>This site uses cookies strictly necessary for its operation, plus third-party resources (Google Fonts, CDN scripts) that may set cookies or process your IP address. <a href="legal-notice.html#cookies">Learn more</a>.</p>
+  <div class="ck-acts">
+    <button class="ref" id="ckRefuse" type="button">Decline</button>
+    <button class="acc" id="ckAccept" type="button">Accept</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY='iaforgulf_cookie_consent', b=document.getElementById('cookieBanner');
+  function close(v){try{localStorage.setItem(KEY,v);}catch(e){} if(b)b.classList.remove('show');}
+  var stored=null; try{stored=localStorage.getItem(KEY);}catch(e){}
+  if(!stored && b){ setTimeout(function(){b.classList.add('show');}, 800); }
+  var a=document.getElementById('ckAccept'), r=document.getElementById('ckRefuse');
+  if(a) a.addEventListener('click',function(){close('accepted');});
+  if(r) r.addEventListener('click',function(){close('declined');});
+})();
+</script>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  document.body.classList.remove('preload');
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var track=document.getElementById('track'); if(track) track.innerHTML+=track.innerHTML;
+  document.querySelectorAll('.reftrack[data-dup]').forEach(function(t){t.innerHTML+=t.innerHTML;});
+  var header=document.getElementById('header');
+  function onScroll(){header.classList.toggle('scrolled',scrollY>40);} onScroll();
+
+  var twEl=document.querySelector('.tw');
+  var words=['diagnose.','train.','architect.','govern.'];
+  if(twEl && !reduce){var w=0,c=0,del=false;(function tick(){var m=words[w];twEl.textContent=m.slice(0,c);
+    if(!del&&c<m.length){c++;setTimeout(tick,74);}else if(!del&&c===m.length){del=true;setTimeout(tick,1600);}
+    else if(del&&c>0){c--;setTimeout(tick,40);}else{del=false;w=(w+1)%words.length;setTimeout(tick,200);}})();}
+
+  if(reduce||!window.gsap){addEventListener('scroll',onScroll);
+    document.querySelectorAll('.hero h1 .l>span').forEach(function(s){s.style.transform='none';});
+    document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in');});return;}
+
+  if(window.Lenis){var lenis=new Lenis({lerp:.09,wheelMultiplier:.9});
+    function raf(t){lenis.raf(t);requestAnimationFrame(raf);}requestAnimationFrame(raf);
+    lenis.on('scroll',function(){onScroll();ScrollTrigger.update();});
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length<2)return;var el=document.querySelector(id);if(!el)return;e.preventDefault();lenis.scrollTo(el,{offset:-50});});});
+  } else { addEventListener('scroll',onScroll); }
+
+  gsap.registerPlugin(ScrollTrigger);
+  var sp=document.querySelectorAll('.hero h1 .l>span');gsap.set(sp,{yPercent:115});
+  gsap.timeline({delay:.12}).from('.hero .eyebrow',{opacity:0,y:14,duration:.6,ease:'power2.out'}).to(sp,{yPercent:0,duration:1,ease:'expo.out',stagger:.1},'-=.3');
+  ScrollTrigger.batch('.reveal',{start:'top 90%',onEnter:function(els){els.forEach(function(el){el.classList.add('in');});}});
+  gsap.utils.toArray('.glow').forEach(function(g){gsap.to(g,{yPercent:22,ease:'none',scrollTrigger:{trigger:g.closest('section'),start:'top bottom',end:'bottom top',scrub:true}});});
+  document.querySelectorAll('.magnetic').forEach(function(b){
+    b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();gsap.to(b,{x:(e.clientX-r.left-r.width/2)*.28,y:(e.clientY-r.top-r.height/2)*.38,duration:.4,ease:'power2.out'});});
+    b.addEventListener('mouseleave',function(){gsap.to(b,{x:0,y:0,duration:.6,ease:'elastic.out(1,.4)'});});
+  });
+});
+</script>
+</body>
+</html>

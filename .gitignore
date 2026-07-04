@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+*.bak
+*.backup
+*.backup-*
+*.tmp
+*~
+.claude/settings.local.json
