@@ -1,0 +1,25 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/private/tmp/claude-501/-Users-jaydenis-Documents-Claude-Projects-PLAN-STRATEGIQUE-URGENCE-APP-CONTENU-SEO/31d28709-ad93-4bf5-870d-b890115ba6c9/scratchpad/iaforgulf"
+publishOrigin = "ui"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
