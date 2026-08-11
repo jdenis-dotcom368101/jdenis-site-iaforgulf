@@ -40,9 +40,7 @@
 {"@type":"BreadcrumbList","@id":"https://iaforgulf.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://iaforgulf.com/"}]}
 ]}
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="/fonts/index.css" rel="stylesheet">
 <style>
   :root{
     --paper:#FFFFFF;
@@ -312,16 +310,6 @@
   .ink .rep-card .btn-ghost{color:var(--ink)}
 
   /* bannière cookies (RGPD/GDPR) */
-  .cookie{position:fixed;left:22px;right:22px;bottom:22px;z-index:70;max-width:760px;margin:0 auto;background:#0E1320;border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 22px;box-shadow:0 16px 44px rgba(0,0,0,.42);display:none;gap:16px;align-items:center;flex-wrap:wrap;color:rgba(255,255,255,.72)}
-  .cookie.show{display:flex}
-  .cookie p{flex:1;min-width:240px;font-size:13px;line-height:1.55}
-  .cookie p a{color:var(--spark)}
-  .cookie .ck-acts{display:flex;gap:10px;flex-wrap:wrap}
-  .cookie button{font-family:inherit;font-weight:600;font-size:13px;padding:10px 20px;border-radius:8px;cursor:pointer;border:1px solid rgba(255,255,255,.22);background:transparent;color:#fff;transition:background .3s,border-color .3s,color .3s}
-  .cookie button.acc{background:var(--clay);border-color:var(--clay)}
-  .cookie button.acc:hover{background:var(--spark);border-color:var(--spark)}
-  .cookie button.ref:hover{border-color:var(--spark);color:var(--spark)}
-  @media(max-width:600px){.cookie{left:12px;right:12px;bottom:12px}.cookie .ck-acts{width:100%}.cookie button{flex:1}}
 
   .reveal{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
   html.js .reveal:not(.in){opacity:0;transform:translateY(30px)}
@@ -329,9 +317,8 @@
   .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important}.marquee .track,.reftrack{animation:none}.caret{animation:none}.hero h1 .l>span{transform:none!important}}
 </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQR2HQXM2L"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KQR2HQXM2L');</script>
+<!-- Audience measurement (Google Analytics): loaded only after explicit consent. See /consent.js -->
+<script src="/consent.js" defer></script>
 </head>
 <body class="preload">
 <div class="grain"></div>
@@ -395,7 +382,7 @@
           <p style="margin-top:20px">Under the <strong>UAE National AI Strategy 2031</strong>, artificial intelligence has become a boardroom priority across banking, real estate, logistics, government and energy. Budgets are flowing — but the gap between proof-of-concept and production value is where most initiatives stall.</p>
           <p class="soft">My role: start from your processes and your data, prioritise the use cases with real ROI, and build them on solid foundations — governance, security and people — so AI becomes a production asset, not an experiment.</p>
         </div>
-        <div class="intro-fig reveal d1"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=720&fit=crop" alt="Data dashboard and AI use-case prioritisation" loading="lazy"></div>
+        <div class="intro-fig reveal d1"><img src="img/stock/ai-dashboard-diagnostics.jpg" alt="Data dashboard and AI use-case prioritisation" loading="lazy"></div>
       </div>
     </div>
   </section>
@@ -462,7 +449,7 @@
       </div>
       <div class="svc">
         <article class="svc-row reveal">
-          <div class="ph"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=500&fit=crop" alt="AI diagnostics and audit" loading="lazy"></div>
+          <div class="ph"><img src="img/stock/ai-audit-analytics.jpg" alt="AI diagnostics and audit" loading="lazy"></div>
           <div class="bd">
             <div class="n">01 — Advisory</div>
             <h3>AI diagnostics &amp; audit</h3>
@@ -471,7 +458,7 @@
           </div>
         </article>
         <article class="svc-row reveal">
-          <div class="ph"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=700&h=500&fit=crop" alt="Corporate AI training" loading="lazy"></div>
+          <div class="ph"><img src="img/stock/corporate-ai-training.jpg" alt="Corporate AI training" loading="lazy"></div>
           <div class="bd">
             <div class="n">02 — Training</div>
             <h3>Executive &amp; team AI training</h3>
@@ -480,7 +467,7 @@
           </div>
         </article>
         <article class="svc-row reveal">
-          <div class="ph"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=700&h=500&fit=crop" alt="Custom AI architecture — agents, RAG, MCP" loading="lazy"></div>
+          <div class="ph"><img src="img/stock/ai-architecture-agents.jpg" alt="Custom AI architecture — agents, RAG, MCP" loading="lazy"></div>
           <div class="bd">
             <div class="n">03 — Engineering</div>
             <h3>AI architecture &amp; solutions</h3>
@@ -711,29 +698,13 @@
   </div>
 </footer>
 
-<!-- GDPR cookie consent -->
-<div class="cookie" id="cookieBanner" role="dialog" aria-label="Cookie settings">
-  <p>This site uses cookies strictly necessary for its operation, plus third-party resources (Google Fonts, CDN scripts) that may set cookies or process your IP address. <a href="legal-notice.html#cookies">Learn more</a>.</p>
-  <div class="ck-acts">
-    <button class="ref" id="ckRefuse" type="button">Decline</button>
-    <button class="acc" id="ckAccept" type="button">Accept</button>
-  </div>
-</div>
-<script>
-(function(){
-  var KEY='iaforgulf_cookie_consent', b=document.getElementById('cookieBanner');
-  function close(v){try{localStorage.setItem(KEY,v);}catch(e){} if(b)b.classList.remove('show');}
-  var stored=null; try{stored=localStorage.getItem(KEY);}catch(e){}
-  if(!stored && b){ setTimeout(function(){b.classList.add('show');}, 800); }
-  var a=document.getElementById('ckAccept'), r=document.getElementById('ckRefuse');
-  if(a) a.addEventListener('click',function(){close('accepted');});
-  if(r) r.addEventListener('click',function(){close('declined');});
-})();
-</script>
+<!-- The cookie consent banner is provided by /consent.js (loaded in <head>).
+     It gates Google Analytics itself: nothing is sent to Google before an
+     explicit "Accept" click, and "Decline" purges any analytics cookie. -->
 
-<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="/js/lenis-1.1.13.min.js"></script>
+<script src="/js/gsap-3.12.5.min.js"></script>
+<script src="/js/ScrollTrigger-3.12.5.min.js"></script>
 <script>
 window.addEventListener('load', function(){
   document.body.classList.remove('preload');
