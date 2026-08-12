@@ -19,13 +19,20 @@ jobs:
           KEY="55245e56f75beca103761b19002548ed"
           HOST="iaforgulf.com"
 
-          # Pages HTML modifiées par ce push (hors dossiers de travail locaux)
+          # Pages HTML modifiées par ce push (hors dossiers de travail locaux).
+          # On exclut aussi les pages en noindex : les mentions légales et
+          # l'ancienne URL mal orthographiée conservée comme page de redirection.
           CHANGED=$(git diff --name-only HEAD^ HEAD -- '*.html' \
-            | grep -vE '^(netlify-|variante|design-v3|hierodeiis-landing)' || true)
+            | grep -vE '^(netlify-|variante|design-v3|hierodeiis-landing)' \
+            | grep -vE '(^|/)legal-notice\.html$' \
+            | grep -vE 'hierodeeis' || true)
 
           [ -z "$CHANGED" ] && { echo "No HTML changes, skipping."; exit 0; }
 
+          # Strip "index.html" at any depth so we submit the canonical directory URL
+          # (/ and /blog/), not /index.html or /blog/index.html.
           URLS=$(echo "$CHANGED" | sed -E 's|^index\.html$||' \
+            | sed -E 's|/index\.html$|/|' \
             | sed -E "s|^(.*)$|\"https://$HOST/\1\"|" | paste -sd, -)
 
           echo "Submitting: $URLS"

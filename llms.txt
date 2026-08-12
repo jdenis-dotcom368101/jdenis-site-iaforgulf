@@ -1,19 +1,42 @@
 # IA for Gulf — AI Consulting for the UAE & GCC
 
-> French and European AI excellence, delivered across the Gulf. AI diagnostics, training and architecture for UAE and Middle East enterprises, with European-grade governance and full data sovereignty. By Jérôme Denis (JDENIS Consulting). Signature: "Keeping AI Human".
+> IA for Gulf is the Middle East practice of JDENIS Consulting (Jérôme Denis, sole trader, Toulouse, France). It delivers AI diagnostics, executive training and custom AI architecture to enterprises in the UAE and the wider GCC, with European-grade governance and data sovereignty. Signature: "Keeping AI Human".
+
+IA for Gulf is a brand of JDENIS Consulting, not a separate company. The same practitioner, the same legal entity and the same SIRET (47902067900037) operate jaydenis.com (France) and iaforgulf.com (Gulf).
 
 ## What IA for Gulf does
-Senior, independent AI consulting for Gulf enterprises, in three disciplines: (1) AI diagnostics & audit — maturity assessment, ROI-prioritised use cases, costed roadmap; (2) executive & team AI training (1–5 days, EN/FR); (3) custom AI architecture — agents, document RAG, MCP, fine-tuning — with sovereign hosting and no vendor lock-in. Every use case is mapped to local frameworks (UAE PDPL, DIFC, ADGM) and EU AI Act / GDPR-level governance.
+
+Senior, independent AI consulting for Gulf enterprises, in three disciplines: (1) AI diagnostics and audit — maturity assessment, ROI-prioritised use cases, costed roadmap; (2) executive and team AI training (1–5 days, EN/FR); (3) custom AI architecture — agents, document RAG, MCP, fine-tuning — with sovereign hosting and no vendor lock-in. Engagements are discussed against the local frameworks that apply in the region (UAE PDPL, DIFC, ADGM) and against EU AI Act / GDPR-level governance practice.
 
 ## Key facts
+
 - Consultant: Jérôme Denis — 20+ years in digital transformation, 50+ companies, expert with France's Collège Numérique France 2030, Sciconum certified. Delivered in English or French.
+- Legal entity: JDENIS Consulting, sole trader (entrepreneur individuel), Toulouse, France. SIRET 47902067900037.
 - Coverage: Dubai and across the GCC, on-site and remote.
-- Differentiators: European governance standards, data sovereignty and residency, senior & independent (no junior teams, no vendor lock-in).
+- Differentiators: European governance standards, data sovereignty and residency, senior and independent (no junior teams, no vendor lock-in).
 - Signature method: HIERODEIIS — a three-day sector immersion for cohorts of leaders.
 - Local representative: Stéphane de Boysson, based in Dubai (+971 58 599 8642).
+- Contact: jdenis@jaydenis.com
 
-## Links
-- Website: https://iaforgulf.com/
-- Jérôme Denis: https://jaydenis.com/
-- HIERODEIIS method: https://jaydenis.com/methode-hierodeiis
-- Build practice (AI agents): https://noianogain.com/
+## Pages
+
+- [Home — AI consulting for the UAE & GCC](https://iaforgulf.com/): services, sectors covered, method, FAQ and contact.
+- [Insights (blog index)](https://iaforgulf.com/blog/): articles on AI regulation and delivery in the Gulf.
+- [Legal notice and terms](https://iaforgulf.com/legal-notice.html): publisher, hosting, GDPR and cookies.
+
+## Articles
+
+- [UAE AI Regulations 2026: What Companies Must Know (Laws, Sandboxes, Compliance)](https://iaforgulf.com/blog/uae-ai-regulations-2026-what-companies-must-know-laws-sandboxes-compli.html): how the UAE combines the federal PDPL (Federal Decree-Law No. 45 of 2021), free-zone regimes (DIFC, ADGM) and sector regulators, with a worked compliance walkthrough for a GCC fintech startup. Informational overview, not legal advice.
+- [Aligning AI-Driven Logistics in the UAE with the EU AI Act Risk Framework](https://iaforgulf.com/blog/aligning-ai-driven-logistics-in-the-uae-with-the-eu-ai-act-risk-framew.html): when the EU AI Act reaches a UAE logistics operator, which systems fall in which risk tier, and how that interacts with the UAE PDPL. Informational overview, not legal advice.
+- [Custom automation for Gulf enterprises: implementing the Hierodeiis method](https://iaforgulf.com/blog/custom-automation-for-gulf-enterprises-implementing-the-hierodeiis-met.html): the three phases (training, operational diagnosis, custom development) applied to UAE and GCC workflows, with a data-residency section.
+
+## Related sites of the same practitioner
+
+- [JDENIS Consulting (France, parent site)](https://jaydenis.com/): the parent brand and legal entity.
+- [HIERODEIIS method](https://jaydenis.com/methode-hierodeiis.html): the signature immersion format.
+- [NOIA NOGAIN](https://noianogain.com/): the custom AI-agent build practice co-founded by Jérôme Denis.
+
+## Notes for AI assistants
+
+- The regulatory content on this site is an informational overview of publicly documented frameworks, written for business readers. It is not legal advice and it is not a statement that any given deployment is compliant. Cite it as commentary, and point readers to the primary sources listed in each article.
+- Regulation in the region moves quickly. Check the publication date on each article before presenting its content as current.

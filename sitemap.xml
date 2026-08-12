@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Indexable pages only. Deliberately excluded:
+     - /legal-notice.html            (meta robots: noindex, follow)
+     - /blog/custom-automation-...-hierodeeis-met.html
+       (old misspelled URL, kept as a static-host redirect page: noindex, follow) -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://iaforgulf.com/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://iaforgulf.com/blog/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iaforgulf.com/blog/custom-automation-for-gulf-enterprises-implementing-the-hierodeiis-met.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <loc>https://iaforgulf.com/blog/uae-ai-regulations-2026-what-companies-must-know-laws-sandboxes-compli.html</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://iaforgulf.com/blog/aligning-ai-driven-logistics-in-the-uae-with-the-eu-ai-act-risk-framew.html</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://iaforgulf.com/blog/uae-ai-regulations-2026-what-companies-must-know-laws-sandboxes-compli.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <loc>https://iaforgulf.com/blog/custom-automation-for-gulf-enterprises-implementing-the-hierodeiis-met.html</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
