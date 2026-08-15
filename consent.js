@@ -17,6 +17,10 @@
  *  - position fixed: no layout shift (no CLS).
  *
  * Public API: window.jdConsent.open() / .status() / .grant() / .deny()
+ *
+ * A page may declare its own GA4 dimensions by setting window.jdAnalytics (a
+ * flat object) before loading this script — blog posts use it to pass their
+ * slug and vertical. See configParams().
  */
 (function () {
   'use strict';
@@ -71,6 +75,22 @@
 
   var gaLoaded = false;
 
+  /* Dimensions declared by the page in window.jdAnalytics — Studio blog posts
+     use it to pass their content group, slug, vertical and site. It is a plain
+     JavaScript object: declaring it issues no request and stores no cookie. It
+     is only read here, hence after consent. Once passed to config, GA4 attaches
+     it to every event on the page, clic_cta included. */
+  function configParams() {
+    var p = { allow_google_signals: false, allow_ad_personalization_signals: false };
+    var extra = window.jdAnalytics;
+    if (extra && typeof extra === 'object') {
+      for (var k in extra) {
+        if (Object.prototype.hasOwnProperty.call(extra, k)) p[k] = extra[k];
+      }
+    }
+    return p;
+  }
+
   function loadGA() {
     if (gaLoaded || !GA_ID) return;
     gaLoaded = true;
@@ -79,7 +99,7 @@
     window.gtag('js', new Date());
     // GA4 anonymizes IP addresses by default; also disable ad personalization
     // and Google signals.
-    window.gtag('config', GA_ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    window.gtag('config', GA_ID, configParams());
     var s = document.createElement('script');
     s.async = true;
     s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_ID);
