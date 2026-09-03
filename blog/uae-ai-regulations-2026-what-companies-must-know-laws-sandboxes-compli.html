@@ -185,6 +185,67 @@ footer{border-top:1px solid var(--line);padding:20px 24px;color:var(--ink-soft);
       <p>A regulatory sandbox is a controlled environment provided by authorities like the ADGM or DIFC to test financial technologies. Startups can use these sandboxes to validate their automated systems with real users under regulatory supervision before full launch.</p>
       <h3>How does UAE AI governance compare to the EU AI Act?</h3>
       <p>The EU AI Act is a highly prescriptive horizontal law based on strict risk classifications. The UAE prefers an agile, sector-specific approach that adapts to technological changes while utilizing federal data protection laws to ensure safety.</p>
+
+<!-- SIGNAL IA — encart newsletter (CTA secondaire ; opt-in explicite, jeton anti-spam délivré par le service) -->
+<style>
+.sig-band{--sig-bg:#F5F6F8;--sig-fg:#14161C;--sig-muted:#5A616E;--sig-line:#dfe3ea;--sig-accent:#1E47F0;--sig-accent-fg:#ffffff;--sig-field:#ffffff;box-sizing:border-box;margin:48px auto 8px;width:100%;background:var(--sig-bg);color:var(--sig-fg);border:1px solid var(--sig-line);border-left:4px solid var(--sig-accent);border-radius:14px;padding:26px 26px 22px;font-family:'Inter',system-ui,sans-serif;box-shadow:0 12px 32px -24px rgba(0,0,0,.35);text-align:left}
+.sig-band *{box-sizing:border-box}
+.sig-inner{display:grid;gap:20px;}
+@media (max-width:760px){.sig-inner{grid-template-columns:1fr}}
+.sig-kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--sig-accent);margin:0 0 8px}
+.sig-title{font-family:'Inter',system-ui,sans-serif;font-size:clamp(20px,2.4vw,26px);line-height:1.22;margin:0 0 8px;letter-spacing:-.01em;color:var(--sig-fg);text-wrap:balance}
+.sig-sub{margin:0;font-size:15px;line-height:1.55;color:var(--sig-muted)}
+.sig-form{margin:0}
+.sig-row{display:flex;gap:10px;flex-wrap:wrap}
+.sig-row input{flex:1 1 150px;min-width:0;padding:12px 14px;border:1px solid var(--sig-line);border-radius:9px;background:var(--sig-field);color:var(--sig-fg);font:inherit;font-size:15px}
+.sig-row input::placeholder{color:var(--sig-muted);opacity:.85}
+.sig-row input:focus{outline:2px solid var(--sig-accent);outline-offset:1px}
+.sig-btn{flex:0 0 auto;padding:12px 18px;border:0;border-radius:9px;background:var(--sig-accent);color:var(--sig-accent-fg);font:inherit;font-weight:700;font-size:15px;cursor:pointer;transition:filter .15s}
+.sig-btn:hover{filter:brightness(1.07)} .sig-btn[disabled]{opacity:.6;cursor:wait}
+.sig-consent{display:flex;gap:9px;align-items:flex-start;margin:12px 0 0;font-size:13px;line-height:1.45;color:var(--sig-muted);cursor:pointer}
+.sig-consent input{margin:3px 0 0;flex:none;accent-color:var(--sig-accent)}
+.sig-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.sig-status{display:none;margin:10px 0 0;padding:9px 12px;border-radius:8px;font-size:14px}
+.sig-status.is-ok{display:block;background:rgba(46,125,50,.12);color:"You're in. Thank you!"} .sig-status.is-err{display:block;background:rgba(179,38,30,.12);color:"Something went wrong. Please try again."}
+.sig-fine{margin:12px 0 0;font-size:12px;line-height:1.5;color:var(--sig-muted)} .sig-fine a{color:inherit;text-decoration:underline}
+</style>
+<section class="sig-band sig-band--iaforgulf" aria-labelledby="sig-title">
+  <div class="sig-inner">
+    <div class="sig-copy">
+      <p class="sig-kicker">SIGNAL AI · the newsletter</p>
+      <h2 class="sig-title" id="sig-title">Every week, the AI signals that matter for a business.</h2>
+      <p class="sig-sub">A short, five-minute read for UAE and GCC companies: regulation (EU AI Act, PDPL), tools and real cases — without the noise.</p>
+    </div>
+    <form id="sig-form" class="sig-form" action="https://script.google.com/macros/s/AKfycbydeEop5VmpXgzPycq8EVz4LK7-cg70JUIt27fJ0Yqemn1jJQ3Ae74MYQPQE8TUrElu4w/exec" method="post" target="sig-frame">
+      <div class="sig-row">
+        <input name="first_name" type="text" maxlength="80" autocomplete="given-name" placeholder="First name (optional)" aria-label="First name (optional)">
+        <input name="email" type="email" maxlength="254" autocomplete="email" inputmode="email" placeholder="you@company.com" aria-label="E-mail" required>
+        <button class="sig-btn" type="submit">Get SIGNAL AI</button>
+      </div>
+      <label class="sig-consent"><input type="checkbox" name="consent" value="yes" required> <span>I agree to receive SIGNAL AI by email, about once a week. I can unsubscribe at any time.</span></label>
+      <input class="sig-hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="utm_source" value="iaforgulf">
+      <input type="hidden" name="utm_medium" value="encart">
+      <input type="hidden" name="utm_campaign" value="signal_ia_encart">
+      <input type="hidden" name="utm_content" value="article-en">
+      <input type="hidden" name="page_url" id="sig-page-url" value="">
+      <input type="hidden" name="form_token" id="sig-token" value="">
+      <p class="sig-status" id="sig-status" role="status" aria-live="polite"></p>
+      <p class="sig-fine">Free. One-click unsubscribe in every edition. <a href="/legal-notice.html">Privacy</a>.</p>
+    </form>
+    <iframe name="sig-frame" title="Signup confirmation" hidden style="display:none;width:0;height:0;border:0"></iframe>
+  </div>
+</section>
+<script>
+(function(){var f=document.getElementById('sig-form');if(!f)return;var st=document.getElementById('sig-status'),btn=f.querySelector('.sig-btn'),lbl=btn.textContent,t;
+document.getElementById('sig-page-url').value=String(window.location.href).slice(0,500);
+try{fetch(f.getAttribute('action')+'?action=token',{redirect:'follow',credentials:'omit'}).then(function(r){return r.json()}).then(function(d){if(d&&d.token){document.getElementById('sig-token').value=d.token}}).catch(function(){})}catch(e){}
+function done(ok,m){window.clearTimeout(t);st.className='sig-status '+(ok?'is-ok':'is-err');st.textContent=m;btn.disabled=false;btn.textContent=lbl;if(ok){f.reset()}}
+f.addEventListener('submit',function(){f.querySelector('[name="website"]').value='';st.className='sig-status';st.textContent='';btn.disabled=true;btn.textContent="Signing you up…";t=window.setTimeout(function(){done(false,"This is taking longer than expected. Check your connection and try again.")},15000)});
+window.addEventListener('message',function(e){var d=e.data||{};if(d.type!=='signal-ia-signup')return;done(!!d.ok,d.message||(d.ok?"You're in. Thank you!":"Something went wrong. Please try again."))});
+})();
+</script>
+
 </article>
 <footer>© 2026 IA for Gulf — Jérôme Denis · <a href="/legal-notice.html" style="color:inherit">Legal notice</a> · 15-minute demo — jdenis@jaydenis.com</footer>
 </body>
